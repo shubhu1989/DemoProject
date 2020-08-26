@@ -32,6 +32,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
           MSCrashes.self
         ])
         
+        print("Login Page")
+        
         btnLogin.layer.cornerRadius = 10.0
         btnLogin.clipsToBounds = true
         
