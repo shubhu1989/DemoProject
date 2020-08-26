@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (5.2.1)
+  - AppCenter (3.3.3):
+    - AppCenter/Analytics (= 3.3.3)
+    - AppCenter/Crashes (= 3.3.3)
+  - AppCenter/Analytics (3.3.3):
+    - AppCenter/Core
+  - AppCenter/Core (3.3.3)
+  - AppCenter/Crashes (3.3.3):
+    - AppCenter/Core
+  - IQKeyboardManagerSwift (6.3.0)
+  - Kingfisher (5.14.1):
+    - Kingfisher/Core (= 5.14.1)
+  - Kingfisher/Core (5.14.1)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AppCenter
+  - IQKeyboardManagerSwift (= 6.3.0)
+  - Kingfisher
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SVProgressHUD
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppCenter
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - SkyFloatingLabelTextField
+    - SVProgressHUD
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  AppCenter: 987f1d24493e47580057911962d11df00e46e060
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  Kingfisher: 8050bc6f7f68cbf3908bd04df7ccbac188f6d6d6
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: f4ca8413925451db9f1c96490f5207a88dfb558f
+
+COCOAPODS: 1.9.2

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard View Controller-->
+        <scene sceneID="1QI-hB-2tn">
+            <objects>
+                <viewController storyboardIdentifier="DashboardViewController" id="yq7-1b-Uqx" customClass="DashboardViewController" customModule="DemoTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IOx-bo-c4j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Veu-B2-AXG">
+                                <rect key="frame" x="10" y="448" width="394" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Veu-B2-AXG" firstAttribute="centerX" secondItem="IOx-bo-c4j" secondAttribute="centerX" id="9Bj-JH-c0z"/>
+                            <constraint firstItem="OSk-n2-Nda" firstAttribute="trailing" secondItem="Veu-B2-AXG" secondAttribute="trailing" constant="10" id="asn-PM-5rS"/>
+                            <constraint firstItem="Veu-B2-AXG" firstAttribute="centerY" secondItem="IOx-bo-c4j" secondAttribute="centerY" id="aty-Oj-GMo"/>
+                            <constraint firstItem="Veu-B2-AXG" firstAttribute="leading" secondItem="OSk-n2-Nda" secondAttribute="leading" constant="10" id="fqe-9y-vuW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OSk-n2-Nda"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EBg-2P-h2f">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="kuO-BM-FX3">
+                            <connections>
+                                <action selector="logoutBtnClicked:" destination="yq7-1b-Uqx" id="KXe-HU-g2I"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblName" destination="Veu-B2-AXG" id="lO6-yU-c5S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPA-99-Dxg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="352"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KSf-oS-BTi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gvf-Wj-uw9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mWd-Rp-SGY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yq7-1b-Uqx" kind="relationship" relationship="rootViewController" id="zTv-yS-aJd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zIu-nb-x1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-535" y="352"/>
+        </scene>
+    </scenes>
+</document>
