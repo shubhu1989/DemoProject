@@ -9,8 +9,8 @@ target 'DemoProject' do
 pod 'AppCenter'
 
 # Pods for DemoTab
-pod 'SwiftyJSON'
-pod 'Kingfisher'
+#pod 'SwiftyJSON'
+#pod 'Kingfisher'
 pod 'Alamofire'
 pod 'SVProgressHUD'
 pod 'SkyFloatingLabelTextField', '~> 3.0'
