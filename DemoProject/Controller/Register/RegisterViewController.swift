@@ -76,7 +76,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBAction func btnRegisterClicked(_ sender: UIButton) {
         IQKeyboardManager.shared.resignFirstResponder()
         
-        if ((txtName.text?.isNameValid)! && ((txtEmailId.text?.isEmaildValid) != nil) && ((txtPassword.text?.isPasswordValid) != nil)){
+        if ((txtName.text?.isNameValid)! && (txtEmailId.text?.isEmaildValid)! && (txtPassword.text?.isPasswordValid)!){
             SVProgressHUD.show(withStatus: "Please Wait...")
             
             let register = RegisterModel(name: txtName.text!, email: txtEmailId.text!, password: txtPassword.text!)
@@ -108,7 +108,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
 
 extension String{
     var isPasswordValid:Bool{
-        let password = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        let password = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[$@$!%*#?&])[A-Za-z\\d$@$!%*#?&]{8,}$")
         return password.evaluate(with: self)
     }
     
