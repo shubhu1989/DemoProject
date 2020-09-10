@@ -28,6 +28,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
         
+        // Added App center for User Analytics
         MSAppCenter.start("c35f3588-6e68-40bb-9f7d-38cc4fe947f8", withServices:[
           MSCrashes.self
         ])
